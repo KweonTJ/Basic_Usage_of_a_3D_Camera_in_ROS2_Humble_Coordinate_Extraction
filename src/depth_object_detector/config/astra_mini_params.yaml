@@ -1,0 +1,38 @@
+depth_object_detector:
+  ros__parameters:
+    # 탐지 거리 및 면적 설정
+    min_depth: 0.2
+    max_depth: 1.4
+    min_area: 800
+    # IR 사각지대 보정을 위한 문턱값
+    ir_threshold: 120
+
+# 2. 카메라 드라이버 설정 (Astra Camera Node)
+# 보통 드라이버의 기본 노드 이름은 'camera' 또는 'astra_camera'입니다.
+camera:
+  ros__parameters:
+    camera_name: "camera"
+    
+    # 컬러 및 깊이 센서 설정
+    color_width: 640
+    color_height: 480
+    color_fps: 30
+    enable_color: false
+    
+    depth_width: 640
+    depth_height: 480
+    depth_fps: 30
+    enable_depth: true
+    
+    # [중요] IR 활성화 (Publisher count: 1을 만들기 위해 필수)
+    enable_ir: true
+    ir_width: 640
+    ir_height: 480
+    ir_fps: 30
+    
+    # 기타 하드웨어 설정
+    depth_align: false
+    publish_tf: true
+    tf_publish_rate: 10.0
+    reconnect_timeout: 6.0
+    depth_scale: 1
