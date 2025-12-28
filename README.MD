@@ -1,5 +1,3 @@
-#겨울방학 #캡스톤_디자인 
-[Camera](https://rucrazia.tistory.com/111)
 # 개요
 - 본 프로젝트는 Orbbec Astra 3D 카메라를 ROS2 Humble 환경에서 사용하기 위한 기초 단계로,  깊이 카메라로부터 획득한 **Depth 정보와 Point Cloud 데이터를 ROS2 토픽으로 처리하고,  특정 픽셀 또는 ROI에 대응하는 3차원 좌표를 추출하는 방법을 구현**하는 것을 목표로 한다.
 - Jetson Nano 기반 TurtleBot 환경에서 Astra 카메라 드라이버를 설정하고,  RGB 이미지–Depth–Point Cloud 간의 관계를 명확히 이해하며,  카메라 좌표계 (Camera Frame) 기준의 3D 좌표를 안정적으로 획득하는 파이프라인을 구성한다.
