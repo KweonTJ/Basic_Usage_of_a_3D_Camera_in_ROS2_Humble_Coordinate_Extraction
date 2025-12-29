@@ -32,6 +32,8 @@
 # 실행
 ### teminal 1
 ```
+source ~/ros2_venv/bin/activate
+export PYTHONNOUSERSITE=1 # 가상환경 내의 numpy 버전 고정 (로컬 버전과 충돌 최소화)
 (ros2_venv) ros2 run depth_object_detector depth_object_detector
 ```
 ### terminal 2 
