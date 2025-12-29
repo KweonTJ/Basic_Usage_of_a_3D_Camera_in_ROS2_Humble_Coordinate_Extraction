@@ -50,3 +50,5 @@ for i in {1..4}; do 
   ros2 topic echo /object/target_$i --once; 
 done
 ```
+
+<img width="3840" height="2160" alt="Image" src="https://github.com/user-attachments/assets/1048295b-22ef-4b08-a5b4-af6309d0dba9" />
