@@ -17,7 +17,7 @@ camera:
     color_width: 640
     color_height: 480
     color_fps: 30
-    enable_color: false
+    enable_color: true
     
     depth_width: 640
     depth_height: 480
@@ -31,7 +31,7 @@ camera:
     ir_fps: 30
     
     # 기타 하드웨어 설정
-    depth_align: false
+    depth_align: true
     publish_tf: true
     tf_publish_rate: 10.0
     reconnect_timeout: 6.0
